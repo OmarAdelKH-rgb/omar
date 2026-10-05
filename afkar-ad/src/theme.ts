@@ -34,12 +34,13 @@ export const theme = {
 
 // 120 BPM @ 30fps -> 15 frames per beat. Every cut lands on a beat.
 export const BEAT = 15;
+// 15s total: each spec gets ~3s so the viewer can actually read it.
 export const TIMELINE = {
-  hook: { from: 0, dur: 45 },
-  size: { from: 45, dur: 45 },
-  res: { from: 90, dur: 45 },
-  cabinet: { from: 135, dur: 60 },
-  outro: { from: 195, dur: 45 },
+  hook: { from: 0, dur: 60 },
+  size: { from: 60, dur: 90 },
+  res: { from: 150, dur: 90 },
+  cabinet: { from: 240, dur: 90 },
+  outro: { from: 330, dur: 120 },
 } as const;
-export const TOTAL = 240;
+export const TOTAL = 450;
 export const SRC_FPS = 30;

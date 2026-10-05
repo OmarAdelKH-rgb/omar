@@ -48,7 +48,7 @@ export const Cabinet: React.FC = () => {
   const head = usePop(2);
   return (
     <AbsoluteFill>
-      <Footage startSec={17.3} push={[1.06, 1.16]} origin="50% 40%" tilt={0.4} />
+      <Footage startSec={8.1} push={[1.12, 1.32]} origin="46% 46%" tilt={0.4} />
       <AbsoluteFill style={{ opacity: 1 - exit, transform: `scale(${1 + exit * 0.05})` }}>
         <AbsoluteFill style={{ alignItems: "center", paddingTop: 250 }}>
           <div style={{ opacity: head, transform: `translateY(${interpolate(head, [0, 1], [-50, 0])}px) scale(${interpolate(head, [0, 1], [0.9, 1])})` }}>
@@ -58,13 +58,13 @@ export const Cabinet: React.FC = () => {
           </div>
         </AbsoluteFill>
         <AbsoluteFill style={{ alignItems: "flex-end", justifyContent: "flex-end", paddingBottom: 330, paddingRight: 70, gap: 22 }}>
-          <Chip delay={12} label="للحرارة" accent={theme.colors.brandB} icon={<SunIcon size={50} spin={frame * 2} />} />
-          <Chip delay={20} label="والأمطار" accent="#3AA0FF" icon={<RainIcon size={50} drop={frame * 0.6} />} />
+          <Chip delay={14} label="للحرارة" accent={theme.colors.brandB} icon={<SunIcon size={50} spin={frame * 2} />} />
+          <Chip delay={26} label="والأمطار" accent="#3AA0FF" icon={<RainIcon size={50} drop={frame * 0.6} />} />
           <Chip
-            delay={28}
+            delay={38}
             label="وكل الظروف الخارجية"
             accent={theme.colors.brandA}
-            icon={<ShieldIcon size={50} check={interpolate(frame, [36, 48], [0, 1], { easing: theme.ease.out, extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
+            icon={<ShieldIcon size={50} check={interpolate(frame, [48, 62], [0, 1], { easing: theme.ease.out, extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />}
           />
         </AbsoluteFill>
       </AbsoluteFill>

@@ -45,7 +45,7 @@ export const Resolution: React.FC = () => {
   return (
     <AbsoluteFill>
       {/* the real camera push into the panel, slowed for a speed-ramp feel */}
-      <Footage startSec={6.55} rate={0.8} push={[1.0, 1.08]} origin="50% 42%" />
+      <Footage startSec={6.2} rate={0.6} push={[1.0, 1.1]} origin="50% 42%" />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 340, opacity: 1 - exit, transform: `translateY(${exit * 50}px)` }}>
         <div
           style={{

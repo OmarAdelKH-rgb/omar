@@ -29,3 +29,16 @@ export const ShieldIcon: React.FC<{ size?: number; check?: number }> = ({ size =
     <path d="m17 24 5 5 9-10" {...stroke} strokeDasharray="22" strokeDashoffset={22 * (1 - check)} />
   </svg>
 );
+
+export const PinIcon: React.FC<{ size?: number }> = ({ size = 40 }) => (
+  <svg width={size} height={size} viewBox="0 0 48 48">
+    <path d="M24 44s14-12.5 14-24a14 14 0 0 0-28 0c0 11.5 14 24 14 24Z" {...stroke} />
+    <circle cx="24" cy="20" r="5" {...stroke} />
+  </svg>
+);
+
+export const PhoneIcon: React.FC<{ size?: number }> = ({ size = 34 }) => (
+  <svg width={size} height={size} viewBox="0 0 48 48">
+    <path d="M14 6h-4a4 4 0 0 0-4 4c0 17.7 14.3 32 32 32a4 4 0 0 0 4-4v-4l-9-4-4 4c-5-2-9-6-11-11l4-4-4-9Z" {...stroke} />
+  </svg>
+);

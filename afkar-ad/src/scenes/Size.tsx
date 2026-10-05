@@ -46,7 +46,7 @@ export const Size: React.FC = () => {
   const float = Math.sin(frame / 12) * 4;
   return (
     <AbsoluteFill>
-      <Footage startSec={2.6} push={[1.12, 1.02]} origin="46% 42%" tilt={-0.5} />
+      <Footage startSec={2.6} rate={0.85} push={[1.14, 1.02]} origin="46% 42%" tilt={-0.5} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 330, opacity: 1 - exit, transform: `scale(${1 - exit * 0.06})` }}>
         <WordReveal
           text="تجهيز شاشة إعلانية"
