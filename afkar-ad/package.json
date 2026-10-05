@@ -1,0 +1,23 @@
+{
+  "name": "afkar-ad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "render": "remotion render src/index.ts AfkarAd out/afkar-ad.mp4 --codec h264 --crf 16",
+    "studio": "remotion studio src/index.ts",
+    "music": "node scripts/music.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@remotion/cli": "^4.0.533",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.533"
+  }
+}
